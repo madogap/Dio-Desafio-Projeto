@@ -1,1 +1,1 @@
-# Inicializando projeto Dio com Ifood <3.
+# Inicializando projeto Dio com PokeDex <3.
