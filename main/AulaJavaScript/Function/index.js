@@ -2,7 +2,6 @@
 const num = 5;
 const numPar = (num % 5) === 0;
 console.log(numPar);
-
 if (num === 0) {
     console.log('Executado com sucesso');
 } else if (num === 5) {
@@ -10,28 +9,19 @@ if (num === 0) {
 } else {
     console.log('Não')
 }
-
 const precoEtanol = 5.79;
 const precoGasol = 6.66;
 const kmPorLitro = 10;
 const distanciaEmKm = 100;
 const tipoCombustivel = 'Gasolina';
-
 const litrosConsumidos = distanciaEmKm / precoEtanol;
-
 if (tipoCombustivel === 'Etanol') {
     const valorGasto = litrosConsumidos * precoEtanol;
     console.log(valorGasto.toFixed(2));
-    
 } else { 
     const valorGasto = litrosConsumidos * precoGasol;
     console.log(valorGasto.toFixed(2));
-   
-    
-
 }
-
-
 function calcuImc(peso, altura) {
     return peso / Math.pow(altura, 2);
 }
@@ -90,15 +80,14 @@ switch (formaPagaDebito) {
 
         break;
 }
-
 function pagDebi(valor, desconto) {
 
     return valor - (valor * desconto / 100);
 }
-function pagVistPix(valor, descontoDinhePix){
+function pagVistPix(valor, descontoDinhePix) {
     return valor - (valor * descontoDinhePix / 100);
 }
-function pagComJuros(valor, juros){
-   
+function pagComJuros(valor, juros) {
+
     return valor + (valor * juros / 100)
 }
