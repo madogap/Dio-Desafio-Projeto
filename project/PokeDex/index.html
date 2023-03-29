@@ -1,14 +1,41 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PokeDex</title>
+    <style>
+        body {
+            background-color: black;
+        }
+
+        h1,
+        p {
+            color: red;
+            text-align: center;
+        }
+
+        button {
+            color: red;
+        }
+    </style>
 </head>
+
 <body>
     <h1>Teste PokeDex</h1>
     <p>npm install -g http-server Foi instalado</p>
     <p>Servidor http-serve ./</p>
+
+    <button id="btnTeste" type="button">Teste</button>
+    <script>
+        const btnTeste = document.getElementById("btnTeste") 
+        btnTeste.addEventListener("click", function(){
+            console.log('Clicou no botão');
+
+        })
+    </script>
 </body>
+
 </html>
